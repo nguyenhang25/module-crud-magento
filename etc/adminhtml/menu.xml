@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Hadu_Product::product" title="Product" translate="title" module="hadu_product" sortOrder="10" resource="Hadu_Product::product"/>
+        <add id="Hadu_Product::product_manage" title="Manage Products" translate="title" module="hadu_product" sortOrder="10" parent="Hadu_Product::product" action="product/product/" resource="Hadu_Product::products"/>
+        <add id="Hadu_Product::product_configuration" title="Configuration" translate="title" module="hadu_product" sortOrder="20" parent="Hadu_Product::product" action="adminhtml/system_config/edit/section/product" resource="Hadu_Product::product_configuration"/>
+    </menu>
+</config>

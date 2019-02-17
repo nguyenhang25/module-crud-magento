@@ -1,0 +1,38 @@
+<script>
+	function xoaSanPham(){
+		var conf = confirm("Bạn có chắc muốn xoá sản phẩm này không?");
+		return conf;
+	}
+</script>
+
+<h1>List Product</h1>
+<a class="add" href="<?php echo $block->getUrl('product/Index/Call'); ?>">ADD PRODUCT</a>
+<table class="table">
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Price</th>
+		<th>Quality</th>
+		<th>Update</th>
+		<th>Delete</th>
+	</tr>
+	<?php
+    $data = $block->getProduct();
+    foreach ($data as $value) {
+    ?>
+    <tr>
+    	<td><?php echo $value['product_id']; ?></td>
+    	<td><?php echo $value['name']; ?></td>
+    	<td><?php echo $value['price']; ?></td>
+    	<td><?php echo $value['quality']; ?></td>
+    	<td><a href="<?php echo $block->getUrl('product/Index/CallEditForm/id/'.$value['product_id'].''); ?>">Update</a></td>
+    	<td><a onclick="return xoaSanPham();" href="<?php echo $block->getUrl('product/Index/Delete/id/'.$value['product_id'].''); ?>">Delete</a></td>
+    </tr>
+    <?php
+    }
+    ?>
+</table>
+
+
+
+

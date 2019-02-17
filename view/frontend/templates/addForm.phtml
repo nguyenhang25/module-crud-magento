@@ -1,0 +1,11 @@
+<h1>Form Add Product</h1>
+<form method="post" action="<?php echo $block->getUrl('product/Index/Add'); ?>">
+		<p>Name</p>
+		<input class="input" type="text" name="name" required/>
+		<p>Price</p>
+		<input class="input" type="text" name="price" required/>
+		<p>Quality</p>
+		<input  class="input" type="text" name="quality" required/>
+		<p></p>
+		<input class="submit" type="submit" name="submit" value="ADD" />
+</form>

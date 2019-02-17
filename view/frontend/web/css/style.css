@@ -1,0 +1,61 @@
+.add {
+	text-decoration: none;
+    display: inline-block;
+    padding: 50px 10px;
+    border: 1px solid #ccc;
+}
+.add:hover{
+	background-color: #006bb4;
+	color: #fff;
+	border: 1px solid #006bb4;
+	text-decoration: none;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+.table {
+	margin-top: 70px;
+}
+.table tr:nth-child(even) {
+  background-color: #eee;
+}
+.table tr:nth-child(odd) {
+ background-color: #fff;
+}
+.table th {
+  background-color: black;
+  color: white;
+}
+
+form {
+	padding-left: 20%
+
+}
+p {
+	margin-top: 2rem;
+}
+
+.input {
+	width: 25%;
+}
+.submit {
+	width: 70px;
+    border: 1px solid #ccc;
+    background-color: #006bb4;
+    color: #fff;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+

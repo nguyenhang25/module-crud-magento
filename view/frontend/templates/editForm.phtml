@@ -1,0 +1,14 @@
+<h1>Form Edit Product</h1>
+<?php $data = $block->getInforProduct(); ?>
+<form method="post" action="<?php echo $block->getUrl('product/Index/Edit'); ?>">
+		<p>ID</p>
+		<input class="input" type="text" name="id" value="<?php echo $data['product_id'];  ?>" readonly />
+		<p>Name</p>
+		<input class="input" type="text" name="name" value="<?php echo $data['name'];  ?>" required />
+		<p>Price</p>
+		<input class="input" type="text" name="price" value="<?php echo $data['price'];  ?>" required />
+		<p>Quality</p>
+		<input class="input" type="text" name="quality" value="<?php echo $data['quality'];  ?>" required/>
+		<p></p>
+		<input class="submit" type="submit" name="submit" value="UPDATE">
+</form>
